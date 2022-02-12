@@ -43,7 +43,7 @@ async function getitems(val){
             if(itemdata.url_image==null){
                 itemdata.url_image=""
             }
-            temp+="<td><h3>"+itemdata.name+"</h3><br>"+"<picture><source srcset='"+itemdata.url_image+"'><img srcset='https://account.ache.org/nfache1test/eWeb/images/DEMO1/notavailable.jpg' alt='"+itemdata.name+"' width='150' height='150'></picture>"+"<br>Precio: $"+itemdata.price+"<br>Tipo: "+itemdata.category+"</td>"
+            temp+="<td><h3>"+itemdata.name+"</h3><br>"+"<picture><source srcset='"+itemdata.url_image+"'><img srcset='https://img.usanetwork.com/sites/nbcunbc/files/images/2020/10/08/Code404-S01-Logo-1920x1080.jpg' alt='"+itemdata.name+"' width='150' height='150'></picture>"+"<br>Precio: $"+itemdata.price+"<br>Tipo: "+itemdata.category+"</td>"
             aux+=1;
             cataux=itemdata.category
             if(aux==3 && itemdata.category==cataux){
@@ -55,4 +55,5 @@ async function getitems(val){
     }
 }
 
-$(document).ready(getitems(namevalue)); 
+
+$(document).ready(getitems(namevalue));
